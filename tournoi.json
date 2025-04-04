@@ -1,0 +1,95 @@
+[
+  {
+    "NomGuilde": "Griffes de lOmbre",
+    "Royaume": "Valdor",
+    "Champions": [
+      {
+        "Nom": "Kael",
+        "Niveau": 12,
+        "Actif": true,
+        "Combats": [
+          {
+            "TypeEpreuve": "Magie",
+            "Resultat": "Victoire",
+            "Score": 87
+          },
+          {
+            "TypeEpreuve": "Tir a distance",
+            "Resultat": "Defaite",
+            "Score": 45
+          }
+        ]
+      },
+      {
+        "Nom": "Lyra",
+        "Niveau": 9,
+        "Actif": false,
+        "Combats": [
+          {
+            "TypeEpreuve": "Corps corps",
+            "Resultat": "faite",
+            "Score": 50
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "NomGuilde": "Lames du Nord",
+    "Royaume": "Fjordak",
+    "Champions": [
+      {
+        "Nom": "Thorn",
+        "Niveau": 14,
+        "Actif": true,
+        "Combats": [
+          {
+            "TypeEpreuve": "Magie",
+            "Resultat": "Victoire",
+            "Score": 91
+          },
+          {
+            "TypeEpreuve": "Magie",
+            "Resultat": "Victoire",
+            "Score": 93
+          }
+        ]
+      },
+      {
+        "Nom": "Mira",
+        "Niveau": 8,
+        "Actif": false,
+        "Combats": [
+          {
+            "TypeEpreuve": "Tir a distance",
+            "Resultat": "Defaite",
+            "Score": 42
+          },
+          {
+            "TypeEpreuve": "Tir a distance",
+            "Resultat": "Defaite",
+            "Score": 37
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "NomGuilde": "Fairy Tail",
+    "Royaume": " Insomnia",
+    "Champions": [
+      {
+        "Nom": "Gildas",
+        "Niveau": 30,
+        "Actif": true,
+        "Combats": [
+          {
+            "TypeEpreuve": "Physique",
+            "Resultat": "Victoire",
+            "Score": 100
+          }
+        ]
+      }
+    ]
+  }
+]

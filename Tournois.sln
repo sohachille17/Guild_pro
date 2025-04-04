@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tournois", "Tournois.csproj", "{201BEE3C-2B0C-3DA1-91EF-76B815A8831E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{201BEE3C-2B0C-3DA1-91EF-76B815A8831E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{201BEE3C-2B0C-3DA1-91EF-76B815A8831E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{201BEE3C-2B0C-3DA1-91EF-76B815A8831E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{201BEE3C-2B0C-3DA1-91EF-76B815A8831E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1D41B102-019C-4FF3-AA9D-40786B47DA8D}
+	EndGlobalSection
+EndGlobal
