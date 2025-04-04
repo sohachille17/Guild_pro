@@ -71,6 +71,18 @@
             "Score": 37
           }
         ]
+      },
+      {
+        "Nom": "GAGILL",
+        "Niveau": 300,
+        "Actif": true,
+        "Combats": [
+          {
+            "TypeEpreuve": "MAGIE",
+            "Resultat": "Defaite",
+            "Score": 300
+          }
+        ]
       }
     ]
   },
@@ -86,6 +98,24 @@
           {
             "TypeEpreuve": "Physique",
             "Resultat": "Victoire",
+            "Score": 100
+          }
+        ]
+      },
+      {
+        "Nom": "Happy",
+        "Niveau": 20,
+        "Actif": true,
+        "Combats": []
+      },
+      {
+        "Nom": "Lucy",
+        "Niveau": 80,
+        "Actif": true,
+        "Combats": [
+          {
+            "TypeEpreuve": "Magie",
+            "Resultat": "Defaite",
             "Score": 100
           }
         ]

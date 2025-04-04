@@ -6,7 +6,8 @@ public class Program
     public static List<Guild> GuildList = new List<Guild>();
     public static void Main()
     {
-        
+        do
+        {
         Menu.AfficherMenu();
         Console.WriteLine("Selectionner l'option");
         string ChoixUser = Console.ReadLine()!;
@@ -15,6 +16,7 @@ public class Program
         {
             case "1":
             Console.WriteLine("");
+            LogicPrincipal.AfficherToutLesGuilds(FILE_PATH, GuildList);
 
             break;
             case "2":
@@ -26,12 +28,17 @@ public class Program
             break;
             case "4":
             Console.WriteLine();
+            LogicPrincipal.MiseAjourDunCombat(FILE_PATH, GuildList);
             break;
             
             default:
             Console.WriteLine($"{ChoixUser} n'existe pas desole");
             break;
         }
+
+        }while(true);
+        
+
 
 
     }

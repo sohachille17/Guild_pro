@@ -24,7 +24,7 @@ public static class LogicJson
 
 
     /* Save File to Json Object */
-    public static void SaveStudentJson(string FilePath, List<Guild> GuildJson)
+    public static void SaveGuildToJSON(string FilePath, List<Guild> GuildJson)
     {
         if(File.Exists(FilePath))
         {

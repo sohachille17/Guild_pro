@@ -12,3 +12,4 @@ C:\Users\soh\Desktop\OOP\Tournois\obj\Debug\net9.0\refint\Tournois.dll
 C:\Users\soh\Desktop\OOP\Tournois\obj\Debug\net9.0\Tournois.pdb
 C:\Users\soh\Desktop\OOP\Tournois\obj\Debug\net9.0\Tournois.genruntimeconfig.cache
 C:\Users\soh\Desktop\OOP\Tournois\obj\Debug\net9.0\ref\Tournois.dll
+C:\Users\soh\Desktop\OOP\Tournois\obj\Debug\net9.0\Tournois.sourcelink.json
