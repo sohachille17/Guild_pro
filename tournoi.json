@@ -40,7 +40,7 @@
     "Champions": [
       {
         "Nom": "Thorn",
-        "Niveau": 14,
+        "Niveau": 74,
         "Actif": true,
         "Combats": [
           {
@@ -117,6 +117,71 @@
             "TypeEpreuve": "Magie",
             "Resultat": "Defaite",
             "Score": 100
+          }
+        ]
+      },
+      {
+        "Nom": "Luxux",
+        "Niveau": 400,
+        "Actif": true,
+        "Combats": [
+          {
+            "TypeEpreuve": "Corps corps",
+            "Resultat": "Victoire",
+            "Score": 100
+          }
+        ]
+      },
+      {
+        "Nom": "Grey Full",
+        "Niveau": 89,
+        "Actif": true,
+        "Combats": [
+          {
+            "TypeEpreuve": "Glace",
+            "Resultat": "Victoire",
+            "Score": 200
+          }
+        ]
+      },
+      {
+        "Nom": "IGI",
+        "Niveau": 10,
+        "Actif": true,
+        "Combats": [
+          {
+            "TypeEpreuve": "Magie",
+            "Resultat": "Victoire",
+            "Score": 100
+          }
+        ]
+      },
+      {
+        "Nom": "Erza Scatelle",
+        "Niveau": 112,
+        "Actif": true,
+        "Combats": [
+          {
+            "TypeEpreuve": "Magie",
+            "Resultat": "Victoire",
+            "Score": 100
+          },
+          {
+            "TypeEpreuve": "Magie",
+            "Resultat": "Victoire",
+            "Score": 90
+          }
+        ]
+      },
+      {
+        "Nom": "Makarov",
+        "Niveau": 500,
+        "Actif": true,
+        "Combats": [
+          {
+            "TypeEpreuve": "Magie",
+            "Resultat": "Defaite",
+            "Score": 70
           }
         ]
       }

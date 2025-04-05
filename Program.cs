@@ -2,8 +2,12 @@
 
 public class Program
 {
+
     public const string FILE_PATH = @"tournoi.json";
     public static List<Guild> GuildList = new List<Guild>();
+    public static List<Champion> ChampionList = new List<Champion>();
+
+ 
     public static void Main()
     {
         do
@@ -17,18 +21,23 @@ public class Program
             case "1":
             Console.WriteLine("");
             LogicPrincipal.AfficherToutLesGuilds(FILE_PATH, GuildList);
+     
 
             break;
             case "2":
             Console.WriteLine();
             LogicPrincipal.AjouterChampion(GuildList, FILE_PATH);
+        
             break;
             case "3":
             Console.WriteLine();
+          
             break;
             case "4":
             Console.WriteLine();
-            LogicPrincipal.MiseAjourDunCombat(FILE_PATH, GuildList);
+          
+       
+            //LogicPrincipal.MiseAjourDunCombat(FILE_PATH, GuildList);
             break;
             
             default:

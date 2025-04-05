@@ -5,7 +5,7 @@ public static class LogicJson
 {
 
 
-    public static List<Guild> LoadStudentToList(string FilePath)
+    public static List<Guild> LoadGuldToList(string FilePath)
     {
         if(File.Exists(FilePath))
         {
@@ -21,6 +21,7 @@ public static class LogicJson
         return new List<Guild>();
 
     }
+
 
 
     /* Save File to Json Object */
@@ -39,7 +40,7 @@ public static class LogicJson
                     });
                     // Save to Json...
                     Sw.Write(JsonGuild);
-                    Console.WriteLine("New guild created succdessfully and saved to Json file");
+                   // Console.WriteLine("New guild created succdessfully and saved to Json file");
                     
                 }catch(JsonException)
                 {
