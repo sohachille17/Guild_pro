@@ -7,7 +7,7 @@ public static class Menu
         Console.WriteLine("");
         Console.WriteLine("[1].Afficher toutes les guildes, leurs champions et combats.");
         Console.WriteLine("[2].Ajouter un nouveau champion à une guilde existante et ses combats");
-        Console.WriteLine("");
+        Console.WriteLine("SUPP");
         Console.WriteLine("");
         Console.WriteLine("A noter que les supression et modification sont automatique");
 

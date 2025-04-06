@@ -3,6 +3,7 @@
 public class Program
 {
 
+    public static bool Stop = true;
     public const string FILE_PATH = @"tournoi.json";
     public static List<Guild> GuildList = new List<Guild>();
     public static List<Champion> ChampionList = new List<Champion>();
@@ -10,6 +11,7 @@ public class Program
  
     public static void Main()
     {
+        
         do
         {
         Menu.AfficherMenu();
@@ -19,21 +21,35 @@ public class Program
         switch (ChoixUser)
         {
             case "1":
+            LogicPrincipal.MiseAjourDunCombat(FILE_PATH, GuildList);
+            
             Console.WriteLine("");
             LogicPrincipal.AfficherToutLesGuilds(FILE_PATH, GuildList);
+
+
+             // Automatique a chaque instruction
+            LogicPrincipal.SupressionAutomatique(FILE_PATH, GuildList);
+            LogicPrincipal.SupprimerGuideAvecChampionsVide(FILE_PATH, GuildList);
+        
      
 
             break;
             case "2":
+             LogicPrincipal.MiseAjourDunCombat(FILE_PATH, GuildList);
             Console.WriteLine();
             LogicPrincipal.AjouterChampion(GuildList, FILE_PATH);
+
+            // Automatique a chaque instruction
+            LogicPrincipal.SupressionAutomatique(FILE_PATH, GuildList);
+            LogicPrincipal.SupprimerGuideAvecChampionsVide(FILE_PATH, GuildList);
         
             break;
             case "3":
-            Console.WriteLine();
+          
           
             break;
             case "4":
+            Stop = false;
             Console.WriteLine();
           
        
@@ -45,7 +61,7 @@ public class Program
             break;
         }
 
-        }while(true);
+        }while(Stop);
         
 
 

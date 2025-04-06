@@ -43,7 +43,7 @@ public static class LogicPrincipal
     public static void AfficherToutLesGuilds(string FilePath, List<Guild> GuildList)
     {
         // On modifie dabord avant d'afficher [A Dieu seul la Gloire]
-        MiseAjourDunCombat(FilePath, GuildList);
+       
         
         GuildList = LogicJson.LoadGuldToList(FilePath);
         // Afficher le resultat
@@ -80,7 +80,7 @@ public static class LogicPrincipal
     public static void AjouterChampion(List<Guild> GuildList,string FilePath )
     {
         // On modifie dabord avant d'afficher [A Dieu seul la Gloire]
-        MiseAjourDunCombat(FilePath, GuildList);
+       
 
         GuildList = LogicJson.LoadGuldToList(FilePath);
 
@@ -114,9 +114,6 @@ public static class LogicPrincipal
             bool Status = (StringStatus.ToLower() == "OUI".ToLower()) ? true : false;
 
             Console.WriteLine("");
-
-
-
 
 
             guild_.Champions?.Add(
@@ -192,6 +189,76 @@ public static class LogicPrincipal
     }
 
 
+    //DELETE
+    public static void SupressionAutomatique(string FielPath , List<Guild> GuildList)
+    {
+      
+        
+        GuildList = LogicJson.LoadGuldToList(FielPath);
+
+        // La recherche 
+        for(int i = 0; i < GuildList.Count; i++)
+        {
+           
+           for(int j = 0 ; j < GuildList[i].Champions!.Count; j++)
+           {
+            if(GuildList[i].Champions![j].Actif == false)
+            {
+                const int NUM_FIX_DELIMITER = 60;
+                
+                int CountCombat = GuildList[i].Champions![j].Combats.Count();
+                int Somme = GuildList[i].Champions![j].Combats.Sum(c => c.Score);
+                int Moyenne = Somme / CountCombat;
+
+                // Verifications des  Champions nombre et somme de < 2 ET < 60
+                if(CountCombat < 2 || Moyenne < NUM_FIX_DELIMITER)
+                {
+                    try
+                    {
+                        GuildList[i].Champions!.RemoveAll(c => c != null);
+                        Console.WriteLine("Deleted Successfully!");
+                    }catch(Exception)
+                    {
+                        Console.WriteLine("Desole combat listes vide ");
+                    }
 
 
-}
+                    
+                    LogicJson.SaveGuildToJSON(FielPath, GuildList);
+                    
+                }
+                
+                
+            }
+           }
+            
+
+                
+
+            }
+       }
+       public static void SupprimerGuideAvecChampionsVide(string FilePath, List<Guild>GuildList)
+       {
+
+         
+
+        
+        GuildList = LogicJson.LoadGuldToList(FilePath);
+        for(int i = 0; i < GuildList.Count; i++)
+        {
+            Console.WriteLine(GuildList[i].Champions!.Count);
+            if(GuildList[i].Champions!.Count == 0)
+            {
+                GuildList.Remove(GuildList[i]);
+                Console.WriteLine($"Guild deleted successfully!!");
+                LogicJson.SaveGuildToJSON(FilePath, GuildList);
+            }
+            
+        }
+
+       }
+    }
+
+
+
+
