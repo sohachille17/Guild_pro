@@ -1,23 +1,47 @@
 [
   {
-    "NomGuilde": "Griffes de lOmbre",
+    "NomGuilde": "Griffes de l’Ombre",
     "Royaume": "Valdor",
     "Champions": [
       {
         "Nom": "Kael",
-        "Niveau": 40,
+        "Niveau": 12,
         "Actif": true,
         "Combats": [
-          {
-            "TypeEpreuve": "Magie",
-            "Resultat": "Victoire",
-            "Score": 87
-          },
-          {
-            "TypeEpreuve": "Magie",
-            "Resultat": "Victoire",
-            "Score": 45
-          }
+          { "TypeEpreuve": "Magie", "Resultat": "Victoire", "Score": 87 },
+          { "TypeEpreuve": "Tir à distance", "Resultat": "Défaite", "Score": 45 }
+        ]
+      },
+      {
+        "Nom": "Lyra",
+        "Niveau": 9,
+        "Actif": false,
+        "Combats": [
+          { "TypeEpreuve": "Corps à corps", "Resultat": "Défaite", "Score": 50 }
+        ]
+      }
+    ]
+  },
+  {
+    "NomGuilde": "Lames du Nord",
+    "Royaume": "Fjordak",
+    "Champions": [
+      {
+        "Nom": "Thorn",
+        "Niveau": 14,
+        "Actif": true,
+        "Combats": [
+          { "TypeEpreuve": "Magie", "Resultat": "Victoire", "Score": 91 },
+          { "TypeEpreuve": "Magie", "Resultat": "Victoire", "Score": 93 }
+        ]
+      },
+      {
+        "Nom": "Mira",
+        "Niveau": 8,
+        "Actif": false,
+        "Combats": [
+          { "TypeEpreuve": "Tir à distance", "Resultat": "Défaite", "Score": 42 },
+          { "TypeEpreuve": "Tir à distance", "Resultat": "Défaite", "Score": 37 }
         ]
       }
     ]

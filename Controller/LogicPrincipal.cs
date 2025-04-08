@@ -7,7 +7,7 @@ public static class LogicPrincipal
 
     public static void MiseAjourDunCombat(string FilePath, List<Guild>GuildList)
     {
-        //int NombreDeVictoire = 0;
+        
         List<Combat> CombatList = new List<Combat>();
         GuildList = LogicJson.LoadGuldToList(FilePath);
 
@@ -131,7 +131,7 @@ public static class LogicPrincipal
             Console.WriteLine("***| -Ajouter un nouveau combat- |***");
             Console.WriteLine("");
 
-            var combat = guild_.Champions?.Find(c=> c.Nom == Nom);
+            var Champion_ = guild_.Champions?.Find(c=> c.Nom == Nom);
             Console.WriteLine("Combien de combat voulez vous ajouter :");
             string? Nombre = Console.ReadLine();
             bool IsConvert = int.TryParse(Nombre, out int NombreCombat );
@@ -139,7 +139,7 @@ public static class LogicPrincipal
             {
                 while(NombreCombat > 0){
 
-                    if(combat != null)
+                    if(Champion_ != null)
                         {
                             Console.WriteLine("Ajouter le TypeEpreuve ");
                             string? TypeEpreuve = Console.ReadLine();
@@ -151,7 +151,7 @@ public static class LogicPrincipal
                             string? Score_ = Console.ReadLine();
                             int.TryParse(Score_, out int Score);
 
-                            combat.Combats.Add(
+                            Champion_.Combats.Add(
                                 new Combat{
                                     TypeEpreuve = TypeEpreuve,
                                     Resultat = Resultat,
@@ -206,6 +206,7 @@ public static class LogicPrincipal
             {
                 const int NUM_FIX_DELIMITER = 60;
                 
+                
                 int CountCombat = GuildList[i].Champions![j].Combats.Count();
                 int Somme = GuildList[i].Champions![j].Combats.Sum(c => c.Score);
                 int Moyenne = Somme / CountCombat;
@@ -215,7 +216,8 @@ public static class LogicPrincipal
                 {
                     try
                     {
-                        GuildList[i].Champions!.RemoveAll(c => c != null);
+                        GuildList[i].Champions!.Remove(GuildList[i].Champions![j]);
+                       // GuildList[i].Champions!.RemoveAll(c => c != null);
                         Console.WriteLine("Deleted Successfully!");
                     }catch(Exception)
                     {
@@ -240,9 +242,6 @@ public static class LogicPrincipal
        public static void SupprimerGuideAvecChampionsVide(string FilePath, List<Guild>GuildList)
        {
 
-         
-
-        
         GuildList = LogicJson.LoadGuldToList(FilePath);
         for(int i = 0; i < GuildList.Count; i++)
         {
